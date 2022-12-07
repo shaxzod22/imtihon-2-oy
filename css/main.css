@@ -308,6 +308,24 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/space-mono-v12-latin-regular.woff2") format("woff2"), url("../fonts/space-mono-v12-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/space-mono-v12-latin-700.woff2") format("woff2"), url("../fonts/space-mono-v12-latin-700.woff") format("woff");
+}
+@font-face {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lexend-deca-v17-latin-regular.woff2") format("woff2"), url("../fonts/lexend-deca-v17-latin-regular.woff") format("woff");
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -323,8 +341,11 @@ template {
 }
 
 .container {
-  max-width: 1320px;
+  max-width: 1150px;
   margin: 0 auto;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 * {
@@ -367,11 +388,76 @@ ul, ol, li {
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 body {
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-right: 20px;
-  font-size: 16px;
+  font-size: 15px;
+  line-height: 25px;
+  font-family: "Lexend Deca", sans-serif;
+  padding-top: 96px;
+}
+
+.link-opacity:hover {
+  opacity: 0.8;
+}
+.link-opacity:active {
+  opacity: 0.5;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 107px;
+  height: 28px;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+.header__nav-list {
+  margin-right: 511px;
+  display: flex;
+  align-items: center;
+}
+.header__nav-item + .header__nav-item {
+  margin-left: 32px;
+}
+.header__button {
+  text-align: center;
+}
+
+.item-link {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  color: #939CAA;
+}
+.item-link:hover {
+  color: #FCB72B;
+}
+
+.button {
+  border: none;
+  background: none;
+  outline: none;
+  background-color: #FCB72B;
+  padding: 14px 39px;
+  border: 3px solid transparent;
+  color: #F2F2F2;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #F2F2F2;
+  border: 3px solid #FCB72B;
+  color: #FCB72B;
 }/*# sourceMappingURL=main.css.map */
