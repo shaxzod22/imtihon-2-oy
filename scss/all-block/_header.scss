@@ -3,14 +3,15 @@
     top: 0;
     left: 0;
     width: 100%;
+    background-color:#ffffff;
+    padding: 22px 0;
     
     &__wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-    
-    &__logo-link {
+        max-width: 1110px;
+        margin: 0 auto;
     }
     
     &__logo {
@@ -34,10 +35,6 @@
             margin-left: 32px;
         }
     }
-    
-    &__button {
-        text-align: center;
-    }
 }
 
 
@@ -58,10 +55,11 @@
     padding: 14px 39px;
     border: 3px solid transparent;
     color: $back;
+    text-align: center;
     cursor: pointer;
     
     &:hover{
-        background-color: $back;
+        background-color: transparent;
         border: 3px solid $yellow;
         color: $yellow;
     }

@@ -1,0 +1,64 @@
+.scooter {
+    margin-bottom: 160px;
+    
+    &__wrapper {
+        background-image: url(./../images/scooter-back.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 650px;
+        padding-top: 153px;
+        padding-bottom: 152px;
+    }
+    
+    &__heading {
+        font-family: 'Space Mono',monospace;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+        max-width: 500px;
+        margin-bottom: 40px;
+        margin-left: 165px;
+    }
+    
+    &__bottom-box {
+        max-width: 405px;
+        margin-left: 260px;
+        position: relative;
+        
+        
+        &::before{
+            position: absolute;
+            content: "";
+            display: inline-block;
+            width: 202px;
+            height: 15px;
+            left: -64%;
+            top:10%;
+            background-image: url(./../images/scooter-line.svg);
+            background-repeat: no-repeat;
+            object-fit: contain;
+        }
+        
+        &::after{
+            position: absolute;
+            content: "";
+            display: inline-block;
+            width: 452px;
+            height: 150px;
+            top: 12%;
+            right: -122%;
+            background-image: url(./../images/scooter-strl.svg);
+            background-repeat: no-repeat;
+            object-fit: contain;
+        }
+    }
+    
+    &__text {
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+    }
+}
+
